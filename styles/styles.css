@@ -1,3 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display&display=swap');
+
+:root {
+    --color-primary: rgb(236, 91, 83);
+    --color-title:#002D5B;
+    --color-subtitle:#35373a;
+    --color-background: #fefafa;
+    --font-title: 'Playfair Display', serif;
+    --font-texts: 'Open Sans', sans-serif;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-texts);
+}
+
+.btn {
+    background-color: var(--color-primary);
+    border-radius: 5px;
+    border: 5px solid var(--color-primary);
+    cursor: pointer;
+    width: auto;
+    font-size: 15px;
+    line-height: 1;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #fff;
+    padding: 15px 30px;
+}
+
+.btn.lg {
+    padding: 15px 30px;
+}
+
 .btn-burger {
     width: 50px;
     outline: 0;
@@ -26,4 +62,173 @@
 .btn-burger.clicked span:nth-child(2) {
     opacity: 0;
     margin: 5px 0;
+}
+
+.banner {
+    background-color: var(--color-background);
+    display: flex;
+    width: 100%;
+}
+
+.banner-social-media {
+    display: none;
+}
+
+.banner-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.banner-description {
+    display: grid;
+    grid-template-columns: 2fr;
+    align-self: center;
+    text-align: center;
+}
+
+.banner-title {
+    color: var(--color-title);
+    font-size: 30px;
+    font-family: var(--font-title);
+    margin-bottom: 20px;
+    font-weight: 600;
+    line-height: 1.3em;
+}
+
+.banner-subtitle {
+    line-height: 26px;
+    margin: 0 35px;
+    color: var(--color-subtitle);
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+
+.banner-button {   
+    margin: 0 auto;
+    margin-top: 35px;
+    
+}
+
+.banner-image {
+    width: 100%;
+}
+
+.about-me {
+    width: 100%;
+}
+
+.about-me__description { 
+    margin-top: 60px;
+    text-align: center;
+}
+
+.about-me__title {
+    color: var(--color-title);
+    margin-bottom: 20px;
+    font-family: var(--font-title);
+    font-size: 20px;
+    line-height: 1;
+}
+
+
+.about-me__subtitle {
+    color: var(--color-subtitle);
+    margin: 0 22px;
+    margin-bottom: 20px;
+}
+
+
+.about-me__container {
+    padding: 0 20px;
+}
+
+.about-me-cards__wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 15 10px;
+    
+}
+
+
+.about-me-cards__title {
+    color: var(--color-title);
+    line-height: 1.3em;
+    font-size: 27px;
+    font-family: var(--font-title);
+    margin-bottom: 20px;
+}
+
+.about-me-cards__text {
+    color: var(--color-subtitle);
+    line-height: 1.9;
+    margin-bottom: 20px;
+}
+
+.about-me-cards__button {
+    max-width: 150px;
+    margin-bottom: 20px;
+}
+
+
+@media  screen and (min-width: 768px) {
+
+    .banner {
+        max-width: 1140px;
+        margin: auto;
+    }
+
+    .banner-wrapper {
+        flex-direction: row;
+    }
+    
+    .banner-social-media {
+        display: flex;
+        align-items: center;
+    }
+
+    .banner-description{
+        text-align:start ;
+    }
+
+    .banner-title {
+        margin: 0 35px;
+        font-size: 65px;
+    }
+
+    .banner-subtitle {
+        font-size: 17px;
+    }
+
+    .banner-button {
+        margin: 0 35px;
+        width: fit-content;
+    }
+
+
+    .about-me {
+        max-width: 1140px;
+        margin: 0 auto;
+    }
+    .about-me__container {
+        display: flex;
+        justify-content: center;
+        padding: 0 45px 0 0;
+
+    }
+
+    .about-me-cards__wrapper {
+        max-width: 33.33%;
+    }
+
+    .about-me-cards__wrapper.center {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .about-me-cards__image {
+        width: 33.332%;
+    }
 }
