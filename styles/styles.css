@@ -2,8 +2,8 @@
 
 :root {
     --color-primary: rgb(236, 91, 83);
-    --color-title:#002D5B;
-    --color-subtitle:#35373a;
+    --color-title: #002D5B;
+    --color-subtitle: #35373a;
     --color-background: #fefafa;
     --font-title: 'Playfair Display', serif;
     --font-texts: 'Open Sans', sans-serif;
@@ -105,10 +105,10 @@
 }
 
 
-.banner-button {   
+.banner-button {
     margin: 0 auto;
     margin-top: 35px;
-    
+
 }
 
 .banner-image {
@@ -119,7 +119,7 @@
     width: 100%;
 }
 
-.about-me__description { 
+.about-me__description {
     margin-top: 60px;
     text-align: center;
 }
@@ -148,7 +148,7 @@
     display: flex;
     flex-direction: column;
     margin: 15 10px;
-    
+
 }
 
 
@@ -171,8 +171,31 @@
     margin-bottom: 20px;
 }
 
+.services {
+    width: 100%;
+    background-color: var;
+}
 
-@media  screen and (min-width: 768px) {
+.services-description {
+    text-align: center;
+}
+
+.services-title {
+    font-size: 20px;
+    font-family: var(--font-title);
+    color: var(--color-title);
+    margin-bottom: 20px;
+}
+
+.services-subtitle {
+    font-size: 16px;
+    font-family: var(--font-texts);
+    color: var(--color-subtitle);
+    margin: 0 22px 20px 22px;
+}
+
+
+@media screen and (min-width: 768px) {
 
     .banner {
         margin: auto;
@@ -183,14 +206,14 @@
         max-width: 1140px;
         flex-direction: row;
     }
-    
+
     .banner-social-media {
         display: flex;
         align-items: center;
     }
 
-    .banner-description{
-        text-align:start ;
+    .banner-description {
+        text-align: start;
     }
 
     .banner-title {
@@ -212,9 +235,15 @@
         max-width: 1140px;
         margin: 0 auto;
     }
+
+    .about-me__title {
+        font-size: 38px;
+    }
+
     .about-me__container {
         display: flex;
         justify-content: center;
+        gap: 25px;
         padding: 0 45px 0 0;
 
     }
@@ -229,14 +258,10 @@
         flex-direction: column;
         justify-content: center;
     }
-    .about-me-cards__image {
-        width: 33.332%;
-    }
 }
 
 /* 
 TODO:
--arreglar el color del background del banner
 -corregir weight de las fuentes
 -carousel
 -navbar
