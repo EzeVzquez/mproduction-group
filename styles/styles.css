@@ -5,6 +5,7 @@
     --color-title: #002D5B;
     --color-subtitle: #35373a;
     --color-background: #fefafa;
+    --color-arrow: #818a91;
     --font-title: 'Playfair Display', serif;
     --font-texts: 'Open Sans', sans-serif;
 
@@ -171,9 +172,13 @@
     margin-bottom: 20px;
 }
 
+.about-me-cards__image {
+    border-radius: 10px;
+}
+
 .services {
     width: 100%;
-    background-color: var;
+    background-color: var(--color-background);
 }
 
 .services-description {
@@ -184,7 +189,7 @@
     font-size: 20px;
     font-family: var(--font-title);
     color: var(--color-title);
-    margin-bottom: 20px;
+    margin: 20px 0;
 }
 
 .services-subtitle {
@@ -194,6 +199,59 @@
     margin: 0 22px 20px 22px;
 }
 
+.services-card__wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    
+}
+
+.services-card {
+    padding: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 0px 45px 0px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    min-height: 400px;
+}
+
+
+.services-card__image--wrapper {
+    width: 100%;
+    margin: 30px 0 20px 0;
+}
+
+.services-card__image {
+    width: 22%;
+}
+
+.services-card__title {
+    font-size: 20px;
+    font-family: var(--font-title);
+    color: var(--color-title);
+    margin-bottom: 20px;
+}
+
+.services-card__subtitle {
+
+    font-size: 16px;
+    font-family: var(--font-texts);
+    color: var(--color-subtitle);
+    margin-bottom: 48px;
+    line-height: 1.9;
+}
+
+
+.services-card__button {
+    color: var(--color-arrow) ;
+    text-decoration: none;
+    margin-bottom: 30px;
+}
 
 @media screen and (min-width: 768px) {
 
@@ -257,6 +315,37 @@
         align-items: center;
         flex-direction: column;
         justify-content: center;
+    }
+
+    .services {
+        padding: 100px 0;
+        min-height: 50vh;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .services-title {
+        font-size: 38px;
+    }
+
+    .services-card__wrapper {
+        padding: 35px;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .services-card {
+        width:  22%;
+    }
+
+    .services-card__title{
+        font-size: 22px;
+    }
+
+    .services-card__subtitle {
+        margin: 0 25px 48px 25px;
     }
 }
 
