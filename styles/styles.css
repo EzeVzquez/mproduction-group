@@ -90,6 +90,10 @@
     top: 8px;
 }
 
+.menu-button-contact {
+    display: none;
+}
+
 .menu-button-container.clicked .menu-button::before {
     top: 0;
     transform: rotate(45deg);
@@ -265,6 +269,27 @@
 
 
 @media screen and (min-width: 768px) {
+
+    .menu-button-container {
+        display: none;
+    }
+
+    .menu-navigation {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        top: 0;
+        background-color: initial;
+    }
+
+    .menu-navigation a {
+        background-color: initial;
+    }
+
+    .menu-button-contact {
+        display: block;
+    }
 
     .banner {
         margin: auto;
