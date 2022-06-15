@@ -198,7 +198,7 @@
     text-align: center;
 }
 
-.about-me__title {
+.page-title {
     color: var(--color-title);
     margin-bottom: 20px;
     font-family: var(--font-title);
@@ -249,37 +249,38 @@
     border-radius: 10px;
 }
 
-.services {
+.cards {
     width: 100%;
     background-color: var(--color-background);
 }
 
-.services-description {
+.page-description {
+    padding-top: 20px;
     text-align: center;
 }
 
-.services-title {
+.page-title {
     font-size: 20px;
     font-family: var(--font-title);
     color: var(--color-title);
     margin: 20px 0;
 }
 
-.services-subtitle {
+.page-subtitle {
     font-size: 16px;
     font-family: var(--font-texts);
     color: var(--color-subtitle);
     margin: 0 22px 20px 22px;
 }
 
-.services-card__wrapper {
+.page-card__wrapper {
     display: flex;
     flex-direction: column;
     margin: 10px;
     
 }
 
-.services-card {
+.page-card {
     padding: 20px;
     background-color: #fff;
     display: flex;
@@ -294,23 +295,23 @@
 }
 
 
-.services-card__image--wrapper {
+.page-card__image--wrapper {
     width: 100%;
     margin: 30px 0 20px 0;
 }
 
-.services-card__image {
+.page-card__image {
     width: 22%;
 }
 
-.services-card__title {
+.page-card__title {
     font-size: 20px;
     font-family: var(--font-title);
     color: var(--color-title);
     margin-bottom: 20px;
 }
 
-.services-card__subtitle {
+.page-card__subtitle {
 
     font-size: 16px;
     font-family: var(--font-texts);
@@ -325,6 +326,74 @@
     text-decoration: none;
     margin-bottom: 30px;
 }
+
+.clients {
+    width: 100%;
+}
+
+.clients-description {
+    text-align: center;
+}
+
+.clients-card__image {
+    width:21% ;
+    border-style: solid;
+    border-color: var(--color-primary);
+    border-radius: 50px;
+}
+
+.email {
+    margin: 60px 0;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+
+.email-wrapper {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.email-label {
+    display: none;
+}
+
+.email-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.email-input {
+    margin: auto;
+    width: 65%;
+    padding: 0.75em;
+    height: auto;
+    color: #666;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 2px;
+    border-color: #eaeaea;
+    background: #fafafa;
+    box-shadow: none;
+    font-size: 17px;
+    font-family: var(--font-texts);
+}
+
+.email-button {
+    border: none;
+    padding:15px 30px;
+    font-size: 15px;
+}
+
 
 @media screen and (min-width: 768px) {
 
@@ -388,7 +457,7 @@
         margin: 0 auto;
     }
 
-    .about-me__title {
+    .page-title {
         font-size: 38px;
     }
 
@@ -411,7 +480,7 @@
         justify-content: center;
     }
 
-    .services {
+    .cards {
         padding: 100px 0;
         min-height: 50vh;
         margin: auto;
@@ -419,18 +488,14 @@
         flex-direction: column;
     }
 
-    .services-title {
-        font-size: 38px;
-    }
-
-    .services-card__wrapper {
+    .page-card__wrapper {
         padding: 35px;
         flex-direction: row;
         justify-content: center;
         gap: 20px;
     }
 
-    .services-card {
+    .page-card {
         width:  22%;
     }
 
@@ -438,8 +503,21 @@
         font-size: 22px;
     }
 
-    .services-card__subtitle {
+    .page-card__subtitle {
         margin: 0 25px 48px 25px;
+    }
+
+    .email-description {
+        width:40%;
+        margin-bottom: 40px;
+    }
+
+    .email-wrapper {
+        width: 55%;
+    }
+
+    .email-button {
+        font-size: 17px;
     }
 }
 
