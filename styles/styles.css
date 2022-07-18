@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display&display=swap');
 
 :root {
-    --color-primary: rgb(236, 91, 83);
-    --color-title: #002D5B;
-    --color-subtitle: #35373a;
-    --color-background: #fefafa;
-    --color-background-secondary: #cac8c8;
+    --color-primary: rgb(208, 19, 23);
+    --color-title: rgb(0, 134, 147);
+    --color-subtitle: rgb( 84, 84, 84);
+    --color-background: rgba(148, 148, 148, .1);
+    --color-background-secondary: rgb(148, 148, 148);
     --color-arrow: #818a91;
     --font-title: 'Playfair Display', serif;
     --font-texts: 'Open Sans', sans-serif;
@@ -27,7 +27,7 @@ li {
 }
 
 .header-container {
-    background: #fefafa;
+    background: var(--color-background);
 }
 
 .header-wrapper {
@@ -127,12 +127,14 @@ li {
 .menu-navigation {
     position: absolute;
     width: 100%;
-    background: var(--color-background);
+    background: #fafafa;
     display: none;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     top: 100px;
+    left: 0;
+    padding-left: 20px;
 }
 
 .menu-navigation a {
@@ -211,6 +213,7 @@ li {
 
 .about-me {
     width: 100%;
+    margin: 1em auto;
 }
 
 .about-me__description {
@@ -249,7 +252,7 @@ li {
 .about-me-cards__title {
     color: var(--color-title);
     line-height: 1.3em;
-    font-size: 27px;
+    font-size: 16px;
     font-family: var(--font-title);
     margin-bottom: 20px;
 }
@@ -359,10 +362,6 @@ li {
     scrollbar-width: none;
     width: 100%;
 }
-
-/* .portfolio-wrapper__carousel > img {
-    
-} */
 
 .portfolio-wrapper__carousel img {
     scroll-snap-align: start;
@@ -550,7 +549,6 @@ li {
 
     .about-me {
         max-width: 1140px;
-        margin: 0 auto;
     }
 
     .page-title {
@@ -567,6 +565,10 @@ li {
 
     .about-me-cards__wrapper {
         max-width: 33.33%;
+    }
+
+    .about-me-cards__title {
+        font-size: 27px ;
     }
 
     .about-me-cards__wrapper.center {
@@ -634,10 +636,3 @@ li {
         width: 10%;
     }
 }
-
-/* 
-TODO:
--carousel
--footer
--banner icons
-*/
