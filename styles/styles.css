@@ -212,6 +212,11 @@ li {
     width: 100%;
 }
 
+.media-logos {
+    width: 24px;
+    height: 24px;
+}
+
 .about-me {
     width: 100%;
     margin: 1em auto;
@@ -456,14 +461,18 @@ li {
     text-align: center;
 }
 
-.footer-social-medial-links {
+.footer-social-media{
     display: flex;
     justify-content: center;
+    min-width: 220px;
+
 }
 
-.footer-social-medial-links li {
-    margin: 0 15px;
-    color: var(--color-alternative-text);
+.footer-social-media-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5px;
+    min-width: 100px;
 }
 
 .footer-logo {
