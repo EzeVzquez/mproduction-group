@@ -471,14 +471,18 @@ li {
 .footer-social-media-links {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 5px;
-    min-width: 100px;
+    gap: 15px;
+    min-width: 175px;
 }
 
 .footer-logo {
     padding: 30px 0;
-    width: 15%;
+    max-width: 223.3px;
     margin: 0 auto;
+}
+
+.footer-logo__img {
+    padding: 0;
 }
 
 .footer-email {
@@ -644,6 +648,6 @@ li {
     }
 
     .footer-logo {
-        width: 10%;
+        width: 15%;
     }
 }
