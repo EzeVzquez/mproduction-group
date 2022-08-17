@@ -18,6 +18,10 @@
   font-family: var(--font-texts);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a {
   text-decoration: none;
 }
@@ -103,6 +107,11 @@ li {
 
 .menu-button-contact {
   display: none;
+}
+
+.menu-button-contact a {
+  text-decoration: none;
+  color: var(--color-alternative-text);
 }
 
 .menu-button-container.clicked .menu-button::before {
@@ -203,8 +212,15 @@ li {
   margin-top: 35px;
 }
 
+.banner-image__wrapper {
+  display: flex;
+  justify-content: flex-end;
+width: 100%;
+}
+
 .banner-image {
   width: 100%;
+  max-width: 600px;
 }
 
 .media-logos {
@@ -266,8 +282,14 @@ li {
   margin: 10px auto;
 }
 
+.about-me-image__wrapper {
+  width: 100%;
+}
+
 .about-me-cards__image {
   border-radius: 10px;
+  width: 100%;
+ 
 }
 
 .cards {
@@ -304,6 +326,7 @@ li {
   padding: 20px;
   background-color: #fff;
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
   align-items: center;
   margin: 10px;
@@ -328,6 +351,15 @@ li {
   font-family: var(--font-title);
   color: var(--color-title);
   margin-bottom: 20px;
+}
+
+.service-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.services-card {
+  justify-content:initial;
 }
 
 .page-card__subtitle {
@@ -544,7 +576,7 @@ li {
   }
 
   .about-me {
-    max-width: 1140px;
+    max-width: 1200px;
   }
 
   .page-title {
@@ -555,7 +587,6 @@ li {
     display: flex;
     justify-content: center;
     gap: 25px;
-    padding: 0 45px 0 0;
   }
 
   .about-me-cards__wrapper {
@@ -570,6 +601,18 @@ li {
     display: flex;
     margin-top: 53.5px;
     flex-direction: column;
+  }
+
+  .about-me-cards__wrapper--with-fixed-width {
+    max-width: 35%;
+  }
+
+  .about-me-cards__text {
+    text-align: start;
+  }
+
+  .about-me-image__wrapper {
+    padding-left: 50px;
   }
 
   .portfolio-wrapper__carousel img {
@@ -607,13 +650,12 @@ li {
     margin: 0 25px 48px 25px;
   }
 
+
+
   .clients-card {
     width: 30%;
   }
 
-  .clients-card__name--one {
-    margin-top: 30px;
-  }
 
   .email-description {
     width: 40%;

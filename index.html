@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-AR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>MProductionGroup</title>
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
 
@@ -21,12 +21,14 @@
           <span class="menu-button"></span>
         </button>
         <nav class="menu-navigation">
-          <a href="">Home</a>
-          <a href="">About</a>
-          <a href="">Portfolio</a>
-          <a href="">Contact</a>
+          <a href="#about-me">Nosotros</a>
+          <a href="#services">Valores</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#bio">Equipo</a>
         </nav>
-        <button class="menu-button-contact btn">Hire me</button>
+        <button class="menu-button-contact btn">
+          <a href="#contact">Contactanos</a>
+        </button>
       </div>
     </header>
     <section class="banner">
@@ -149,41 +151,37 @@
           </ul>
         </div>
         <div class="banner-description">
-          <h3 class="banner-title">MEP</h3>
+          <h3 class="banner-title">MProductionGroup</h3>
 
           <p class="banner-subtitle">
-            expertos en la producción de contenidos y la generación de
+            Expertos en la producción de contenidos y la generación de
             experiencias unicas
           </p>
 
-          <a class="btn banner-button" href="">learn more</a>
+          <a class="btn banner-button" href="#about-me">Conocer más</a>
         </div>
         <picture class="banner-image__wrapper"
           ><img
             class="banner-image"
-            src="https://websitedemos.net/personal-portfolio-02/wp-content/uploads/sites/770/2022/02/h1_hero-bg.png"
+            src="media/bannerpage.png"
             alt="banner image"
           />
         </picture>
       </div>
     </section>
-    <section class="about-me">
+    <section class="about-me" id="about-me">
       <div class="about-me__description">
         <h4 class="page-title about-me__title">Quienes Somos</h4>
-        <!-- <p class="about-me__subtitle">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        </p> -->
-        <div class="line-decoration"></div>
       </div>
       <div class="about-me__container">
-        <div class="about-me-cards__wrapper">
+        <div
+          class="about-me-cards__wrapper about-me-cards__wrapper--with-fixed-width"
+        >
           <h3 class="about-me-cards__title">Somos MEP</h3>
-          <!-- <div class="line-decoration line-decoration__two"></div> -->
           <p class="about-me-cards__text">
             Una productora audiovisual, creada por colegas amigos con una pasion
             compartida.
-          </p>
-          <p class="about-me-cards__text">
+            <br />
             Somos MEP, una productora audiovisual, creada por colegas amigos con
             una pasion compartida.
           </p>
@@ -196,28 +194,26 @@
             Conformamos un completo equipo de profesionales de medios al frente
             de formatos audiovisuales de televisión, servicios On Demand,
             contenidos digitales, programación de contenidos para medios.
-          </p>
-          <p class="about-me-cards__text">
+            <br />
             Sumamos una visión estratégica del negocio y del posicionamiento.
           </p>
         </div>
-        <picture class="about-me-cards__wrapper">
+        <picture class="about-me-cards__wrapper about-me-image__wrapper">
           <img
             class="about-me-cards__image"
-            src="https://websitedemos.net/personal-portfolio-02/wp-content/uploads/sites/770/2021/02/section-1-bg1.jpg"
+            src="/media/control.jpeg"
             alt="about Me image"
           />
         </picture>
       </div>
     </section>
-    <section class="cards services">
+    <section class="cards services" id="services">
       <div class="page-description services-description">
         <h4 class="page-title services-title">Nuestros Valores</h4>
         <p class="page-subtitle services-subtitle">
-          MEP… expertos en la producción de contenidos y la generacion de
-          experiencias unicas …
+          Expertos en la producción de contenidos y la generacion de
+          experiencias unicas
         </p>
-        <div class="line-decoration line-decoration__three"></div>
       </div>
       <div class="page-card__wrapper services-card__wrapper">
         <div class="page-card services-card">
@@ -226,7 +222,7 @@
           >
             <img
               class="page-card__image services-card__image"
-              src="https://websitedemos.net/personal-portfolio-02/wp-content/uploads/sites/770/2021/02/computer.png"
+              src="https://www.svgrepo.com/show/339634/trust.svg"
               alt="services image"
             />
           </picture>
@@ -236,23 +232,14 @@
             con responsabilidad lo que ideamos y creemos con absoluta
             convicción.
           </p>
-          <!-- <a class="services-card__button" href=""
-            ><svg style="width: 40px; height: 40px" viewBox="0 0 24 24">
-              <path
-                fill="currentColor"
-                d="M6,13V11H14L10.5,7.5L11.92,6.08L17.84,12L11.92,17.92L10.5,16.5L14,13H6M22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12M20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12Z"
-              />
-            </svg>
-          </a> -->
         </div>
-
         <div class="page-card services-card">
           <picture
             class="page-card__image--wrapper services-card__image--wrapper"
           >
             <img
               class="page-card__image services-card__image"
-              src="https://websitedemos.net/personal-portfolio-02/wp-content/uploads/sites/770/2021/02/computer.png"
+              src="https://www.svgrepo.com/show/37024/creative-process.svg"
               alt="services image"
             />
           </picture>
@@ -264,14 +251,6 @@
             desarrollamos generamos el combo que permite que la evolucion junto
             al cliente resulte constante e infinita.
           </p>
-          <!-- <a class="services-card__button" href=""
-            ><svg style="width: 40px; height: 40px" viewBox="0 0 24 24">
-              <path
-                fill="currentColor"
-                d="M6,13V11H14L10.5,7.5L11.92,6.08L17.84,12L11.92,17.92L10.5,16.5L14,13H6M22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12M20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12Z"
-              />
-            </svg>
-          </a> -->
         </div>
         <div class="page-card services-card">
           <picture
@@ -279,7 +258,7 @@
           >
             <img
               class="page-card__image services-card__image"
-              src="https://websitedemos.net/personal-portfolio-02/wp-content/uploads/sites/770/2021/02/ads-150x150.png"
+              src="https://www.svgrepo.com/show/154181/team-work.svg"
               alt="services image"
             />
           </picture>
@@ -293,23 +272,14 @@
             habilidades que permiten alcanzar el mejor resultado y satisfacer
             altas expectativas.
           </p>
-          <!-- <a class="services-card__button" href=""
-            ><svg style="width: 40px; height: 40px" viewBox="0 0 24 24">
-              <path
-                fill="currentColor"
-                d="M6,13V11H14L10.5,7.5L11.92,6.08L17.84,12L11.92,17.92L10.5,16.5L14,13H6M22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12M20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12Z"
-              />
-            </svg>
-          </a> -->
         </div>
-
         <div class="page-card services-card">
           <picture
             class="page-card__image--wrapper services-card__image--wrapper"
           >
             <img
               class="page-card__image services-card__image"
-              src="https://websitedemos.net/personal-portfolio-02/wp-content/uploads/sites/770/2021/02/settings.png"
+              src="https://www.svgrepo.com/show/124637/results.svg"
               alt="services image"
             />
           </picture>
@@ -321,23 +291,12 @@
             mejora continua, permitiendo que nuestra actividad contribuya a
             agregar valor en los procesos en los que participamos.
           </p>
-          <!-- <a class="services-card__button" href="">
-            <svg style="width: 40px; height: 40px" viewBox="0 0 24 24">
-              <path
-                fill="currentColor"
-                d="M6,13V11H14L10.5,7.5L11.92,6.08L17.84,12L11.92,17.92L10.5,16.5L14,13H6M22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12M20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12Z"
-              />
-            </svg>
-          </a> -->
         </div>
       </div>
     </section>
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
       <div class="page-description portfolio-description">
         <h4 class="page-title portfolio-tittle">Nuestro Portfolio</h4>
-        <!-- <p class="page-subtitle portfolio-subtitle">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        </p> -->
         <div class="line-decoration line-decoration__four"></div>
       </div>
       <div class="portfolio-wrapper__carousel">
@@ -367,7 +326,7 @@
         />
       </div>
     </section>
-    <section class="cards clients">
+    <section class="cards clients" id="bio">
       <div class="page-description clients-description">
         <h4 class="page-title clients-title">Nosotros</h4>
         <p class="page-subtitle clients-subtitle">
@@ -377,15 +336,9 @@
           Estamos en constante evolucion y aprendizaje que permite anticiparnos
           y adaptarnos a los cambios que propone la industria de medios.
         </p>
-        <!-- <div class="line-decoration line-decoration__five"></div> -->
       </div>
       <div class="page-card__wrapper clients-wrapper">
         <div class="page-card clients-card">
-          <!-- <picture class="clients-card__decoration"
-            ><img
-              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABmJLR0QA/wD/AP+gvaeTAAAA0klEQVRIie3UMQrCMBiG4VfBQQ/goOfwDlbcvYEeTL2H4CRaJ3EW6yDu4qLEwRJikJo/pB00H3RI6PN/gZJCzD+nC6yApdB1PB0ALWALKGAndGnu9j7F8xwrYCRwM8NNpKUDA5+BhqNLDHcBmtLijTFgKnBrTwdAz8AKGJfl6tZ6aK1Tx2Jfp7Pg/eTtkp3OwcAPoObh7gKnczUG3CpwOurLk/G6NqGc8wAFHEM4+1uoolOFdPZ1qiyxOBb/fvHJwWQf9nydTpK/UPT36Qd0MT+cJ22SeL4mDLKwAAAAAElFTkSuQmCC"
-            />
-          </picture> -->
           <picture class="page-card__image--wrapper">
             <img
               class="page-card__image clients-card__image"
@@ -399,17 +352,11 @@
             Ejecutiva de Empresas de Comunicación. Es abogado (UBA) y posee
             estudios en comunicación
           </p>
-          <!-- <div class="line-decoration line-decoration__six"></div> -->
           <h5 class="clients-card__name clients-card__name--one">
             Emilio Lafferriere
           </h5>
         </div>
         <div class="page-card clients-card">
-          <!-- <picture class="clients-card__decoration"
-            ><img
-              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABmJLR0QA/wD/AP+gvaeTAAAA0klEQVRIie3UMQrCMBiG4VfBQQ/goOfwDlbcvYEeTL2H4CRaJ3EW6yDu4qLEwRJikJo/pB00H3RI6PN/gZJCzD+nC6yApdB1PB0ALWALKGAndGnu9j7F8xwrYCRwM8NNpKUDA5+BhqNLDHcBmtLijTFgKnBrTwdAz8AKGJfl6tZ6aK1Tx2Jfp7Pg/eTtkp3OwcAPoObh7gKnczUG3CpwOurLk/G6NqGc8wAFHEM4+1uoolOFdPZ1qiyxOBb/fvHJwWQf9nydTpK/UPT36Qd0MT+cJ22SeL4mDLKwAAAAAElFTkSuQmCC"
-            />
-          </picture> -->
           <picture class="page-card__image--wrapper">
             <img
               class="page-card__image clients-card__image"
@@ -423,21 +370,15 @@
             entre ellas PRAMER, CHELLO MEDIA y AMC NETWORKS, llevo adelante
             grandes procesos de start up y reestructuraciones.
           </p>
-          <!-- <div class="line-decoration line-decoration__six"></div> -->
           <h5 class="clients-card__name clients-card__name--two">
             Marisa Piñeiro
           </h5>
         </div>
       </div>
     </section>
-    <section class="email">
+    <section class="email" id="contact">
       <div class="page-description email-description">
         <h4 class="page-title email-title">Contactanos</h4>
-        <p class="page-subtitle email-subtitle">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-          tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
-        </p>
-        <!-- <div class="line-decoration line-decoration--small"></div> -->
       </div>
       <div class="email-wrapper">
         <form class="email-form" action="">
@@ -451,7 +392,7 @@
             class="email-input"
             placeholder="Escriba su mensaje"
           ></textarea>
-          <button class="btn email-button" type="submit">Subscribe</button>
+          <button class="btn email-button" type="submit">Enviar mensaje</button>
         </form>
       </div>
     </section>
@@ -582,7 +523,7 @@
           />
         </picture>
         <div class="footer-email">
-          <p>Mail@example.com</p>
+          <p>info@mproduction.com</p>
         </div>
       </div>
       <div class="footer-copyright">
