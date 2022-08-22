@@ -215,12 +215,12 @@ li {
 .banner-image__wrapper {
   display: flex;
   justify-content: flex-end;
-width: 100%;
+  width: 100%;
+  align-items: flex-end;
 }
 
 .banner-image {
   width: 100%;
-  max-width: 600px;
 }
 
 .media-logos {
@@ -289,7 +289,6 @@ width: 100%;
 .about-me-cards__image {
   border-radius: 10px;
   width: 100%;
- 
 }
 
 .cards {
@@ -359,7 +358,7 @@ width: 100%;
 }
 
 .services-card {
-  justify-content:initial;
+  justify-content: initial;
 }
 
 .page-card__subtitle {
@@ -502,10 +501,14 @@ width: 100%;
 }
 
 .footer-email {
-  color: var(--color-alternative-text);
   font-size: 24px;
   font-family: var(--font-title);
   font: 400;
+}
+
+.footer-email a {
+  text-decoration: none;
+  color: var(--color-alternative-text);
 }
 
 .footer-copyright {
@@ -650,12 +653,9 @@ width: 100%;
     margin: 0 25px 48px 25px;
   }
 
-
-
   .clients-card {
     width: 30%;
   }
-
 
   .email-description {
     width: 40%;
