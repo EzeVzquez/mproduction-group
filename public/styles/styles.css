@@ -741,3 +741,15 @@ li {
 #myBtn:hover {
   background-color: var(--color-arrow);
 }
+
+
+.tuvvo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+.tuvvo img {
+  max-width: 100px;
+}
